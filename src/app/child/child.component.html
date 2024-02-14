@@ -1,0 +1,14 @@
+{{data}}
+<div *ngFor="let n of d1">
+    {{n}}
+</div>
+<button (click)="passtoparent()">
+    sendtoparent
+</button>
+<input type="text" (input)="updatetext($event)">
+<p>Input: {{message}}</p>
+<br>
+Enter:<input type="text" [(ngModel)]="mymsg">
+<br>
+<input type="text" [(ngModel)]="myvalue">
+<br>
